@@ -1,0 +1,22 @@
+
+Power Generation ML Model - Information
+======================================
+Created: 2025-07-14 07:38:16
+Environment: VS Code + Jupyter
+Model Type: Linear Regression
+Target: Power Generation (kW)
+
+Performance Metrics:
+- R² Score: 0.653
+- RMSE: 2.29 kW
+- MAE: 1.83 kW  
+- MAPE: 2.90%
+
+Files Generated:
+- power_generation_model.pkl (Main model file)
+- model_info.txt (This file)
+
+Usage:
+model_package = joblib.load('power_generation_model.pkl')
+model = model_package['model']
+scaler = model_package['scaler']
